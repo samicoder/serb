@@ -10,18 +10,19 @@ frappe.ready(function() {
 			msgprint(__("Please enter your email"));
 			$('[name="email"]').focus();
 			return false;
-		}
-		if(!(password)) {
+		} 
+		else if(!(password)) {
 			msgprint(__("Please enter your password"));
 			$('[name="password"]').focus();
 			return false;
 		}
 
-		if(!valid_email(email)) {
+		else if(!valid_email(email)) {
 			msgprint(__("Please enter a valid email address"));
 			$('[name="email"]').focus();
 			return false;
 		}
+                else {
 
 		$("#contact-alert").toggle(false);
 		frappe.call({
@@ -40,11 +41,13 @@ frappe.ready(function() {
 					console.log(r.exc);
 				}
 				$(':input').val('');
+                                return false;
 			}
 		});
-
+                }
 	return false;
 	});
+
 
 });
 

@@ -36,11 +36,6 @@ def signup_new_user(email="", company_name=""):
     if not email:
         frappe.response["message"] = _('Email is Required', "ar"),
         return
-    try:
-        frappe.validate_email_add(email_str=email, throw=True)
-    except:
-        frappe.response["message"] = _('{0} is not a valid Email address!', "ar").format(email),
-        return
 
     if not company_name:
         frappe.response["message"] = _('Company Name is Required', "ar"),
@@ -61,7 +56,7 @@ def signup_new_user(email="", company_name=""):
     if not domain.isalnum():
         frappe.response["message"] = _('Company name should consists of Alphabetic and numbers only.', "ar"),
         return
-    domain = "{0}.{1}".format(domain, default_server)
+    domain = "{}.{}".format(domain, default_server)
     if frappe.db.exists(
             "Site",
             {
@@ -71,9 +66,6 @@ def signup_new_user(email="", company_name=""):
         frappe.response["message"] = _('This Company Name is already used!', "ar"),
         return
     # Create site
-    from random import choice
-    import string
-    admin_pass = ''.join([choice(string.digits) for i in range(6)])
     frappe.get_doc(dict(
         doctype='Site',
         domain=domain,
@@ -96,8 +88,8 @@ def signup_new_user(email="", company_name=""):
 <br></h5></div><div dir="ltr"><h4>
     فريق عمل إيصال
 </h4> </div>""".format(company_name)
-    try:
-        frappe.sendmail(
+
+    frappe.sendmail(
         message=msg,
         recipients=[email],
         subject="مرحبا في إيصال",
@@ -105,21 +97,17 @@ def signup_new_user(email="", company_name=""):
         delayed=False,
         as_markdown=True
     )
-    except:
-        frappe.response["message"] = _('{0} is not a valid Email address!', "ar").format(email),
-        return
     from frappe.utils.background_jobs import enqueue
     enqueue(
         send_create_site,
-        domain=domain,
-        admin_pass=admin_pass
+        domain=domain
     )
 
     return "okay", _("You will Receive an email with full details soon", "ar")
 
 
 def send_create_site(domain, admin_pass):
-    link = "http://xxx.erp.altqniah.sa:8001/create_site?domain={0}&admin_pass={1}".format(domain, admin_pass)
+    link = "http://xxx.erp.altqniah.sa:8001/create_site?domain={}&admib_pass={}".format(domain, )
     from urllib2 import Request, urlopen
     urlopen(Request(link))
 
@@ -128,8 +116,6 @@ def send_create_site(domain, admin_pass):
 def send_site_details_email():
 
     domain = frappe.form_dict.get('domain')
-    admin_pass = frappe.form_dict.get('admin_pass')
-
     company = frappe.get_value(
         "Site",
         dict(domain=domain),
@@ -150,13 +136,13 @@ def send_site_details_email():
 </div><div dir="rtl"><h4>
 اسم المستخدم: <b>Administrator</b><br>
 </h4></div><div dir="rtl"><h4>
-كلمة المرور: <b>{admin_pass}</b><br>
+كلمة المرور: <b>essal12xc</b><br>
 </h4></div>
 <div dir="rtl"><h5>
 <br>نتمنى لكم محاسبة أكثر دقة مع إيصال<br>
 <br></h5></div><div dir="ltr"><h4>
         فريق عمل إيصال
-</h4> </div>""".format(domain=domain, admin_pass=admin_pass)
+</h4> </div>""".format(domain=domain)
 
     frappe.sendmail(
         message=msg,
