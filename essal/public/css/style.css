@@ -457,12 +457,12 @@ ul.footer-features-list li >a{
 	width: 100%;
   min-width: 700px;
 	background: #026FCE;
-	background: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
-	background-image: -ms-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
-	background-image: -moz-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
-	background-image: -o-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
-	background-image: -webkit-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
-	background-image: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+	background: linear-gradient(45deg, #6b00c4 1%, #a968d1 64%, #be9ad6 97%);
+	background-image: -ms-linear-gradient(45deg, #6b00c4 1%, #a968d1 64%, #be9ad6 97%);
+	background-image: -moz-linear-gradient(45deg, #6b00c4 1%, #a968d1 64%, #be9ad6 97%);
+	background-image: -o-linear-gradient(45deg, #6b00c4 1%, #a968d1 64%, #be9ad6 97%);
+	background-image: -webkit-linear-gradient(45deg, #6b00c4 1%, #a968d1 64%, #be9ad6 97%);
+	background-image: linear-gradient(45deg, #6b00c4 1%, #a968d1 64%, #be9ad6 97%);
 }
 
 
