@@ -56,7 +56,7 @@ def signup_new_user(email="", company_name=""):
     if not domain.isalnum():
         frappe.response["message"] = _('Company name should consists of Alphabetic and numbers only.', "ar"),
         return
-    domain = "{}.{}".format(domain, default_server)
+    domain = "{0}.{1}".format(domain, default_server)
     if frappe.db.exists(
             "Site",
             {
@@ -66,6 +66,9 @@ def signup_new_user(email="", company_name=""):
         frappe.response["message"] = _('This Company Name is already used!', "ar"),
         return
     # Create site
+    from random import choice
+    import string
+    admin_pass = ''.join([choice(string.digits) for i in range(6)])
     frappe.get_doc(dict(
         doctype='Site',
         domain=domain,
@@ -100,14 +103,15 @@ def signup_new_user(email="", company_name=""):
     from frappe.utils.background_jobs import enqueue
     enqueue(
         send_create_site,
-        domain=domain
+        domain=domain,
+        admin_pass=admin_pass
     )
 
     return "okay", _("You will Receive an email with full details soon", "ar")
 
 
-def send_create_site(domain):
-    link = "http://xxx.erp.altqniah.sa:8001/create_site?domain={}".format(domain)
+def send_create_site(domain, admin_pass):
+    link = "http://xxx.erp.altqniah.sa:8001/create_site?domain={0}&admin_pass={1}".format(domain, admin_pass)
     from urllib2 import Request, urlopen
     urlopen(Request(link))
 
@@ -116,6 +120,8 @@ def send_create_site(domain):
 def send_site_details_email():
 
     domain = frappe.form_dict.get('domain')
+    admin_pass = frappe.form_dict.get('admin_pass')
+
     company = frappe.get_value(
         "Site",
         dict(domain=domain),
@@ -136,13 +142,13 @@ def send_site_details_email():
 </div><div dir="rtl"><h4>
 اسم المستخدم: <b>Administrator</b><br>
 </h4></div><div dir="rtl"><h4>
-كلمة المرور: <b>essal12xc</b><br>
+كلمة المرور: <b>{admin_pass}</b><br>
 </h4></div>
 <div dir="rtl"><h5>
 <br>نتمنى لكم محاسبة أكثر دقة مع إيصال<br>
 <br></h5></div><div dir="ltr"><h4>
         فريق عمل إيصال
-</h4> </div>""".format(domain=domain)
+</h4> </div>""".format(domain=domain, admin_pass=admin_pass)
 
     frappe.sendmail(
         message=msg,
