@@ -1,10 +1,10 @@
-## Essal
+## Serb
 
-Essal ERP
+Serb ERP
 
 
 <!-- Mohammed -->
 
 #### License
 
-MIT
+GPL
