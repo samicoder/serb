@@ -1,0 +1,165 @@
+
+{% extends "templates/web.html" %}
+
+{% block title %}  روايات ايصال  {% endblock %}
+
+{% block page_banner %}
+
+     <div class="page-banner page-banner-subpage p-b-0">
+		<div class="container">
+			<div class="banner-slogan banner-slogan-hero">
+				<h1 class="slogan-title text-center"> شهادات عملائنا </h1>
+				<h2 class="slogan-desc text-center"> اكتشف المؤسسات ورجال الأعمال مثلك الذين يستخدمون ايصال</h2>
+			</div>
+			<div class="banner-tabs tabs-responsive">
+			<div class="tabs-container">
+			<ul class="nav nav-tabs text-center">
+				<li><a href="/about-us">عن إيصال</a></li>
+				<li ><a href="/team">طاقم العمل</a></li>
+				<!--<li class="active"><a>روايات إيصال</a></li>-->
+				<li><a href="contact-us">اتصل بنا</a></li>
+			</ul>
+		<button class="btn btn-icon btn-link btn-prev" type="button" data-click="prev-tab"><i class="zmdi zmdi-chevron-left"></i></button>
+		<button class="btn btn-icon btn-link btn-next" type="button" data-click="next-tab"><i class="zmdi zmdi-chevron-right"></i></button>
+	</div>
+</div>		</div>
+		<!-- /.banner-tabs -->
+	</div>
+	<!-- /.page-banner -->
+{%  endblock %}
+
+{% block content %}
+
+<div class="team-page">
+
+
+	<div class="page-section">
+		<div class="container">
+			<div class="row">
+
+				<div class="testimonial-container clearfix">
+
+
+
+                    <div class="col-sm-12 col-md-2">
+                        <div class="person-image" style="font-size:0px;">
+							<img alt="Sami " src="assets/essal/img/team/sami.png" />
+                        </div>
+						<div class="name-position">
+							<h3>سامي الحلوة</h3>
+							<p>رئيس مجلس الإدارة</p>
+						</div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+
+							<div class="testimonial-text">
+								<div class="quotes-mark">
+									<img src="assets/essal/img/png/qout1.png">
+								</div>
+								<p>
+									لا أعلم ماذا أقول شهادة حق لم أجد شركة أجنبيه ولا عربيه
+									بهذا الرقي في التعامل احترام واحتراف ودقة
+									في العمل واحترام العميل سبق ان جربت أكثر من شركة
+									أجنبية وعربية لكن لم اجد مثل شركتكم الرائعة
+									لم أجد أتمنى لكم دوام التوفيق والى الأمام من نجاح الى نجاح
+								</p>
+							</div>
+
+
+                    </div>
+					<div class="col-sm-2 col-md-2">
+						<div class="testimonial-by">
+
+									<div class="co-img">
+										<img alt="exa " src="assets/essal/img/testimonial/exa_logo.png" />
+									</div>
+
+								</div>
+					</div>
+                </div>
+
+				<div class="testimonial-container clearfix">
+
+
+
+                    <div class="col-sm-12 col-md-2">
+                        <div class="person-image" style="font-size:0px;">
+							<img alt="Ibrahim " src="assets/essal/img/team/ibrahim.png" />
+                        </div>
+						<div class="name-position">
+							<h3>ابراهيم الحلوة</h3>
+							<p>  الرئيس التنفيذي</p>
+						</div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+
+							<div class="testimonial-text">
+								<div class="quotes-mark">
+									<img src="assets/essal/img/png/qout1.png">
+								</div>
+								<p>
+									إيصال نظام متكامل ورائع ساهم في تطوير وتنظيم أعمال شركتي ومتابعة مباشرة من أي مكان
+									وسهل عمل الموظفين في الأقسام المختلفة أتمنى لإيصال مزيدا من التطور والتميز وفي انتظار مفاجآت سارة.
+								</p>
+							</div>
+
+
+                    </div>
+					<div class="col-sm-2 col-md-2">
+						<div class="testimonial-by">
+
+									<div class="co-img">
+										<img alt="exa " src="assets/essal/img/testimonial/exa_logo.png" />
+									</div>
+
+								</div>
+					</div>
+                </div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- /.page-section -->
+	<div class="page-section section-white section-center">
+		<div class="container">
+			<h2 class="section-title">  اشترك الآن وجرب إيصال لمدة 30 يوماً مجاناً </h2>
+
+			<form method="post" action="" class="register-form">
+				<input type="hidden" name="action" value="register"/>
+								<input style="display: none;" name="email" value="" autocomplete="off">
+
+				<div class="register-container">
+					<div class="form-group">
+						<input name="email" class="form-control input-lg" type="text" placeholder="البريد الالكتروني" required/>
+					</div>
+					<div class="form-group">
+						<input name="password" class="form-control input-lg" type="password" placeholder="كلمة المرور" required/>
+					</div>
+					<button class="btn btn-primary-light btn-lg" type="submit">الاشتراك</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<!-- /.page-section -->
+
+	<div class="page-section section-blue">
+	<div class="container">
+		<h2 class="section-title text-center">شركائنا</h2>
+		<div class="partner-logos">
+			<a href=""><img src="assets/essal/img/team/nana.png" alt="NaNa"/></a>
+			<a href=""><img src="assets/essal/img/team/exaserve.png" alt="ExaServe"/></a>
+			<a href=""><img src="assets/essal/img/team/matajer.png" alt="Matajer"/></a>
+		</div>
+	</div>
+</div>
+</div>
+
+{% endblock %}
+
+<div>
+	{% block footer %}
+		{%- block top_footer -%}	{% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+	{% endblock %}
+</div>

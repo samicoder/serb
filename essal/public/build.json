@@ -1,0 +1,30 @@
+{
+	"css/essal-web.css": [
+		"public/css/coredd40.css",
+		"public/css/maindd40.css",
+		"public/css/paneldd40.css",
+		"public/css/globaldd40.css",
+		"public/css/bootstrap-rtl.css",
+		"public/css/bootstrap-slider.min.css",
+		"public/css/style.css",
+		"public/css/contact.css",
+		"public/css/team.css",
+		"public/css/about.css",
+		"public/css/price.css"
+	],
+	"js/essal-web.min.js": [
+
+		"public/js/core.mindd40.js",
+		"public/js/maindd40.js",
+		"public/js/wow.min.js",
+		"public/js/bootstrap-slider.min.js",
+		"public/js/essal.js"
+
+
+	],"js/essal-desk.min.js": [
+
+		"public/js/config.js"
+
+	]
+
+}

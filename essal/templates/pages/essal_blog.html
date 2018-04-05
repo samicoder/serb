@@ -1,0 +1,153 @@
+{% extends "templates/web.html" %}
+
+{% block title %} مدونة إيصال  {% endblock %}
+
+{% block page_banner %}
+<div class="page-banner page-banner-subpage p-b-0">
+    <div class="container">
+        <div class="banner-slogan banner-slogan-hero">
+            <h1 class="slogan-title text-center"> مدونة إيصال </h1>
+        </div>
+    </div>
+    <!-- /.banner-tabs -->
+</div>
+
+
+{%  endblock %}
+
+{% block content %}
+<div class="price-container">
+
+
+    <!-- /.page-banner -->
+
+
+    <!-- /.page-section -->
+    <!-- Pricing -->
+    <div class="secondary-page-section page-section section-center features"
+         style="background-color: white;">
+        <div class="row">
+
+            <div class="col-sm-12" style="padding-right: 50px;text-align: center">
+                <div style="width: 100%;height: 100%">
+                    <img alt="" src="assets/essal/img/image2.png" class="lazy"/>
+                </div>
+            </div>
+            <div class="col-sm-12" style="text-align: right;padding-top: 20px">
+                <h3 class="m-t-0" style="color: #1e88e5;">
+
+لماذا تتوجه الشركات لاستخدام الأنظمة الالكترونية؟
+                            </h3>
+<h5>
+
+    تعتمد الكثير من الشركات بمختلف أحجامها على الأنظمة الالكترونية في إدارة الشركات ويرجع ذلك الي العديد من الأسباب دعونا نذكر بعضها.
+
+
+</h5>
+                 <p>
+
+
+                     <ul style="padding-right: 30px;">
+                <li>
+تسهيل إحصاء العمالة المطلوبة ومهاراتها ومؤهلاتها بناءً على احتياجات الأقسام من خلال توفير الوقت في البحث عن موظف عن طريق فتح ملف لكل موظف يبين تاريخ تعيينه وانجازاته والمهام التي قام بها.
+
+                </li>
+
+                <li>
+الحد من الفساد الإداري حيث أن التعاملات تتم الكترونياً وبشكل شفاف أمام الجميع كالحضور والانصراف والمهام المنجزة وغيرها.
+
+                </li>
+
+                <li>
+المساهمة في ربط الفروع مع بعضها البعض بنفس الوقت وبذلك رفع الإنتاجية وتوفير الوقت.
+
+                </li>
+
+                <li>
+تسهيل حصر الخصومات والزيادات للموظفين وبالأخص للشركات كبيرة الحجم.
+
+                </li>
+
+                <li>
+انجاز المهام الإدارية بشكل أسرع وأسهل، من خلال احاله المسؤولية للموظف المعني بشكل مباشر دون قيود إدارية وأيضا التسهيل على الإدارة اتخاذ القرارات بشكل أسرع، بحيث أنها تحصل على النتائج والبيانات أولا بأول من خلال الأنظمة الالكترونية.
+
+                </li>
+
+                <li>
+
+المساهمة في تقليل التكاليف الإدارية، من خلال تقليص عدد الموظفين المسؤولين عن تنسيق الأعمال في كل قسم على حدا.
+                </li>
+
+
+                <li>
+رفع إنتاجية الشركة، عن طريق توفير الوقت في استخراج الفواتير وكشوفات الرواتب وغيرها من العمليات الحسابية والادارية.
+
+                </li>
+
+
+                <li>
+تحسين الخدمات من خلال خفض تكاليف التنقل، التوصيل في أي وقت وأي مكان، وسهولة الوصول للمعلومات.
+
+                </li>
+
+                <li>
+تحسين التنافس الاقتصادي وإتاحة الفرصة للشركات ذات المقاس المتوسط والصغير لدخول المنافسة.
+
+                </li>
+
+
+                <li>
+اتخاذ القرار بشكل أسرع من خلال التوفير الدائم للمعلومات بين يدي متخذي القرار
+
+                </li>
+
+
+                <li>
+الحد من تطبيق النظام البيروقراطي في إدارة الشركات من خلال التسريع في التعاملات الإدارية بين الأقسام وتوفير الوقت والجهد.
+
+                </li>
+
+            </ul>
+
+
+                            </p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- /.page-section -->
+    <div class="page-section section-blue section-center">
+        <div class="container">
+            <h2 class="section-title">اشترك اﻵن في إيصال</h2>
+
+            <form method="post" action="" class="register-form">
+                <input type="hidden" name="action" value="register"/>
+                <input style="display: none;" name="email" value="" autocomplete="off">
+
+                <div class="register-container">
+                    <div class="form-group">
+                        <input name="email" class="form-control input-lg" type="text" placeholder="البريد الالكتروني"
+                               required/>
+                    </div>
+                    <div class="form-group">
+                        <input name="password" class="form-control input-lg" type="password" placeholder="كلمة المرور"
+                               required/>
+                    </div>
+                    <button class="btn btn-primary-light btn-lg" type="submit">الاشتراك</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- /.page-section -->
+</div>
+
+{% endblock %}
+
+<div>
+    {% block footer %}
+    {%- block top_footer -%} {% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+    {% endblock %}
+</div>

@@ -1,0 +1,88 @@
+
+{% extends "templates/web.html" %}
+
+{% block title %} الاسعار  {% endblock %}
+
+{% block page_banner %}
+
+    <div class="page-banner page-banner-subpage p-b-0">
+		<div class="container">
+			<div class="banner-slogan banner-slogan-hero">
+				<h1 class="slogan-title text-center"> الباقات والأسعار  </h1>
+				<h2 class="slogan-desc text-center">اشترك الآن وتمتع باستخدام مزايا وتطبيقات ايصال، مع الإعداد والتدريب مجاناً</h2>
+				<h2 class="slogan-desc text-center">اشترك الآن وجرب إيصال لمدة 30 يوماً مجاناً</h2>
+			</div>
+		</div>
+		<!-- /.banner-tabs -->
+	</div>
+
+
+{%  endblock %}
+
+{% block content %}
+	<div class="subscription">
+
+		<div class="page-main">
+            <div class="container">
+                <!-- /.main-sidebar -->
+                <div class="main-content main-content-center">
+                    <!-- {{url}} -->
+                    <iframe id="subscription" style="overflow: auto; width: 100%; height: 1500px;" src="" frameborder="0" width="100%"></iframe>
+                    <!--
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+
+                            <h2>مشترك جديد</h2>
+                            <form method="post">
+                                <input type="hidden" name="package">
+                                <input type="hidden" name="action" value="subscription">
+
+								<label id="show-package" class="btn btn-block btn-default m-b-40"></label> <!-- الأشتراك على باقه 20$ شهريا >
+
+								<div class="form-group ">
+									<input type="text" name="company_name" value="" class="form-control floatlabel" placeholder="الشركة"/>
+								</div>
+								<div class="form-group">
+									<input type="text" name="client_name" value="" class="form-control floatlabel" placeholder=" الاسم"/>
+								</div>
+								<div class="form-group ">
+									<input type="text" name="email" class="form-control floatlabel" placeholder="البريد الالكتروني" required/>
+								</div>
+								<div class="row ">
+                                    <div class="col-sm-6 padding-zero">
+                                        <div class="form-group">
+                                            <input type="password" name="password" class="form-control floatlabel" placeholder="الرقم السرى" required/>
+                                        </div>
+                                    </div>
+									<div class="col-sm-6 padding-zero">
+                                        <div class="form-group">
+                                            <input type="password" name="re-password" class="form-control floatlabel" placeholder="إعادة الرقم السرى" required/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="cu-btn-send btn btn-lg btn-block btn-primary">إشتراك</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+        <!-- /.page-section -->
+
+        <div class="page-section section-contact-map">
+            <!--<div id="map"></div>-->
+        </div>
+
+	</div>
+<script>{% include "templates/pages/subscription.js" %}</script>
+{% endblock %}
+
+<div>
+	{% block footer %}
+		{%- block top_footer -%}	{% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+	{% endblock %}
+</div>

@@ -1,0 +1,91 @@
+{% extends "templates/web.html" %}
+{% block title %} المميزات {% endblock %}
+
+{% block page_banner %}
+
+      <div class="page-banner page-banner-subpage p-b-0">
+			<div class="container">
+				<div class="banner-slogan banner-slogan-hero">
+					<h1 class="slogan-title text-center">  المميزات  </h1>
+					<h2 class="slogan-desc text-center">اشترك الآن وتمتع باستخدام مزايا وتطبيقات ايصال، مع الإعداد والتدريب مجاناً</h2>
+				</div>
+			</div>
+			<!-- /.banner-tabs -->
+		</div>
+		<!-- /.page-banner -->
+{%  endblock %}
+
+{% block content %}
+
+
+	<div class="features-page">
+
+	<!-- /.page-section -->
+		<a name="features"></a>
+		<div class="page-section section-center features">
+
+		<div class="row">
+        <div class="container">
+
+			<h1 class="section-title">الدقة، الكفاءة، الجودة</h1>
+			{% if videos %}
+				{% for data in videos %}
+
+					<p class="section-desc" id="title">{{data.link}}</p> <!-- {{data.link}} {{data[0]}} -->
+					<br/>
+					<div class="features features-icon-top features-center">
+						<div class="row" id="description">
+							{{data.description}}
+						</div>
+						<br/>
+						<br/>
+						<div class="row">
+							<iframe id="video" width="854" height="480" src="https://www.youtube.com/embed/{{data.video_source}}" frameborder="0" allowfullscreen></iframe>
+						</div>
+
+					</div>
+
+				{% endfor %}
+			{% else %}
+				<h2 class="section-title">هذا الفيديو غير متاح حاليا ... من فضلك حاول فى وقت اخر</h2>
+			{% endif %}
+            <br/>
+            <br/>
+        </div>
+	</div>
+	<!-- /.page-section -->
+		<div class="page-section section-blue section-center">
+		<div class="container">
+			<h2 class="section-title">اشترك اﻵن في إيصال</h2>
+
+			<form method="post" action="" class="register-form">
+				<input type="hidden" name="action" value="register"/>
+								<input style="display: none;" name="email" value="" autocomplete="off">
+
+				<div class="register-container">
+					<div class="form-group">
+						<input name="email" class="form-control input-lg" type="text" placeholder="البريد الالكتروني" required/>
+					</div>
+					<div class="form-group">
+						<input name="password" class="form-control input-lg" type="password" placeholder="كلمة المرور" required/>
+					</div>
+					<button class="btn btn-primary-light btn-lg" type="submit">الاشتراك</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<!-- /.page-section -->
+	</div>
+
+{% endblock %}
+
+<div>
+	{% block footer %}
+
+		{%- block top_footer -%}	{% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+
+	{% endblock %}
+
+
+</div>

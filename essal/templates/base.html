@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappe.io/ -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %} {{ title | striptags }} {% endblock %}</title>
+	<meta name="generator" content="frappe">
+
+    {% block favicon %}
+	<link rel="shortcut icon"
+		href="assets/essal/img/favicon.jpg"
+		type="image/x-icon">
+	<link rel="icon"
+		href="assets/essal/img/favicon.jpg"
+		type="image/x-icon">
+    {% endblock %}
+	{%- block head -%}
+		{% if meta_block is defined -%}
+		{{ meta_block }}
+		{%- endif %}
+
+		{% if head_html is defined -%}
+		{{ head_html or "" }}
+		{%- endif %}
+
+		{%- for link in web_include_css %}
+		<link type="text/css" rel="stylesheet" href="{{ link|abs_url }}">
+		{%- endfor -%}
+
+	    {%- block head_include %}{{ head_include or "" }}{% endblock -%}
+
+		{%- block style %}{%- endblock -%}
+	{%- endblock -%}
+    <script>
+        window.frappe = {};
+		frappe.ready_events = [];
+		frappe.ready = function(fn) {
+			frappe.ready_events.push(fn);
+		};
+		window.dev_server = {{ dev_server }};
+    </script>
+
+</head>
+<body data-path="{{ path }}">
+	<div class="main-section">
+		<div>
+			{%- block banner -%}
+			{% include "templates/includes/banner_extension.html" ignore missing %}
+				{% if banner_html -%}
+				<header class="container">{{ banner_html or "" }}</header>
+				{%- endif %}
+			{%- endblock -%}
+
+			{%- block navbar -%}
+                {% include "templates/includes/navbar/navbar.html" %}
+            {%- endblock -%}
+            <div class="hero-and-content">
+                <div data-html-block="hero">
+				{%- block hero -%}{%- endblock -%}
+                </div>
+                <div class="" data-html-block="content">
+
+                {% block page_banner %}{% endblock %}
+                {% block content %}{% endblock %}
+                </div>
+            </div>
+			{%- if footer is defined -%}
+			<footer class="page-footer">
+				<div class="footer-container">
+					{{ footer }}
+				</div>
+			</footer>
+			{%- endif -%}
+		</div>
+		<div class="page-footer">
+			{% block footer %}
+				{%- block top_footer -%}
+				{%- endblock -%}
+			{% endblock %}
+
+			{%- block bottom_footer -%}
+				 {% include "templates/includes/footer/bottom_footer.html" %}
+			{%- endblock -%}
+
+		</div>
+
+	</div>
+
+	<!-- js should be loaded in body! -->
+	<script type="text/javascript"
+		src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="/assets/js/frappe-web.min.js"></script>
+
+    {%- if js_globals is defined %}
+    <script>
+    {%- for key, value in js_globals.iteritems() %}
+    window.{{ key }} = "{{ value[0] }}";
+    {%- endfor -%}
+    </script>
+    {% endif -%}
+
+	{%- for link in web_include_js %}
+	<script type="text/javascript" src="{{ link|abs_url }}"></script>
+	{%- endfor -%}
+
+    {%- block script %}{%- endblock %}
+
+	<!-- csrf_token -->
+
+    {%- block body_include %}{{ body_include or "" }}{% endblock -%}
+
+    <script>
+          window.intercomSettings = {
+            app_id: "t3ed2fne"
+          };
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/t3ed2fne';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</body>
+</html>

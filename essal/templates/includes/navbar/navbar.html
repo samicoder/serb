@@ -1,0 +1,19 @@
+<div class="page-navbar">
+		<nav class="navbar">
+			<div class="container">
+				<button class="navbar-toggle btn btn-link btn-icon" type="button"><i><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></i></button>
+				<div class="navbar-header ">
+					<a class="navbar-brand text-center"
+						 href="{{ url_prefix }}{{ home_page or "/"}}">
+						<!-- {{ brand_html or (frappe.get_hooks("brand_html") or ["Home"])[0] }} -->
+					</a>
+					<a href="http://erp.altqniah.sa/" class="navbar-login btn btn-link btn-icon"><i class="zmdi zmdi-account-o zmdi-hc-fw"></i></a>
+				</div>
+
+				{% block navbar_items %}
+				{% include "templates/includes/navbar/navbar_items.html" %}
+				{% endblock %}
+
+			</div>
+		</nav>
+</div>
