@@ -8,8 +8,6 @@ from frappe import _
 # from frappe.commands.scheduler import _is_scheduler_enabled
 # from frappe.model.db_schema import DbManager
 # from frappe.utils.password import create_auth_table
-from frappe.utils import validate_email_add
-
 
 __version__ = '0.0.1'
 
@@ -39,8 +37,8 @@ def signup_new_user(email="", company_name=""):
         frappe.response["message"] = _('Email is Required', "ar"),
         return
     try:
-        validate_email_add(email_str=email.strip(), throw=True)
-    except frappe.InvalidEmailAddressError:
+        frappe.validate_email_add(email_str=email, throw=True)
+    except:
         frappe.response["message"] = _('{0} is not a valid Email address!', "ar").format(email),
         return
 
@@ -98,7 +96,8 @@ def signup_new_user(email="", company_name=""):
 <br></h5></div><div dir="ltr"><h4>
     فريق عمل إيصال
 </h4> </div>""".format(company_name)
-    frappe.sendmail(
+    try:
+        frappe.sendmail(
         message=msg,
         recipients=[email],
         subject="مرحبا في إيصال",
@@ -106,6 +105,9 @@ def signup_new_user(email="", company_name=""):
         delayed=False,
         as_markdown=True
     )
+    except:
+        frappe.response["message"] = _('{0} is not a valid Email address!', "ar").format(email),
+        return
     from frappe.utils.background_jobs import enqueue
     enqueue(
         send_create_site,
