@@ -1,6 +1,2 @@
-.DS_Store
-*.pyc
-*.egg-info
-*.swp
-tags
-essal/docs/current
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
