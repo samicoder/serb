@@ -1,0 +1,36 @@
+{% extends "templates/web.html" %}
+{% block title %} الصفحة غير موجودة {% endblock %}
+
+{% block page_banner %}
+ <div class="page-banner page-banner-subpage p-b-0 text-center">
+		<div class="container">
+			<div class="banner-info">
+				<div class="error-404sm">
+					404
+					<h1>خطأ. لم يتم العثور على الصفحة المطلوبة</h1>
+				</div>
+				<div class="error-404">
+					4<div class="bird-map"></div>4
+					<h1>خطأ. لم يتم العثور على الصفحة المطلوبة</h1>
+				</div>
+				<div class="actions multi">
+					<a href="/contact-us" class="btn btn-lg btn-light btn-outline">اتصل بنا</a>
+					<a href="/home" class="btn btn-lg btn-light btn-outline">الرئيسية</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{%  endblock %}
+
+
+
+<div>
+	{% block footer %}
+
+		{%- block top_footer -%}	{% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+
+	{% endblock %}
+
+
+</div>

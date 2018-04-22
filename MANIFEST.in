@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include essal *.css
+recursive-include essal *.csv
+recursive-include essal *.html
+recursive-include essal *.ico
+recursive-include essal *.js
+recursive-include essal *.json
+recursive-include essal *.md
+recursive-include essal *.png
+recursive-include essal *.py
+recursive-include essal *.svg
+recursive-include essal *.txt
+recursive-exclude essal *.pyc

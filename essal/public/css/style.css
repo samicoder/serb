@@ -1,0 +1,474 @@
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../essal/fonts/raleway-light-webfont.eot');
+    src: url('../essal/fonts/raleway-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+        url('../essal/fonts/raleway-light-webfont.woff2') format('woff2'),
+        url('../essal/fonts/raleway-light-webfont.woff') format('woff'),
+        url('../essal/fonts/raleway-light-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../essal/fonts/raleway-regular-webfont.eot');
+    src: url('../essal/fonts/raleway-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+        url('../essal/fonts/raleway-regular-webfont.woff2') format('woff2'),
+        url('../essal/fonts/raleway-regular-webfont.woff') format('woff'),
+        url('../essal/fonts/raleway-regular-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../essal/fonts/raleway-semibold-webfont.eot');
+    src: url('../essal/fonts/raleway-semibold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+        url('../essal/fonts/raleway-semibold-webfont.woff2') format('woff2'),
+        url('../essal/fonts/raleway-semibold-webfont.woff') format('woff'),
+        url('../essal/fonts/raleway-semibold-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../essal/fonts/raleway-bold-webfont.eot');
+    src: url('../essal/fonts/raleway-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+        url('../essal/fonts/raleway-bold-webfont.woff2') format('woff2'),
+        url('../essal/fonts/raleway-bold-webfont.woff') format('woff'),
+        url('../essal/fonts/raleway-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RB';
+    src: url('../essal/fonts/rb-light.eot');
+    src: url('../essal/fonts/rb-light.eot?#iefix') format('embedded-opentype'),
+        url('../essal/fonts/rb-light.woff2') format('woff2'),
+        url('../essal/fonts/rb-light.woff') format('woff'),
+        url('../essal/fonts/rb-light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RB';
+    src: url('../essal/fonts/rb-regular.eot');
+    src: url('../essal/fonts/rb-regular.eot?#iefix') format('embedded-opentype'),
+        url('../essal/fonts/rb-regular.woff2') format('woff2'),
+        url('../essal/fonts/rb-regular.woff') format('woff'),
+        url('../essal/fonts/rb-regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RB';
+    src: url('../essal/fonts/rb-bold.eot');
+    src: url('../essal/fonts/rb-bold.eot?#iefix') format('embedded-opentype'),
+        url('../essal/fonts/rb-bold.woff2') format('woff2'),
+        url('../essal/fonts/rb-bold.woff') format('woff'),
+        url('../essal/fonts/rb-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+        font-family: 'icons';
+        src:url('../essal/fonts/icons/iconsdd40.eot?v=254');
+        src:url('../essal/fonts/icons/iconsdd40.eot?v=254') format('embedded-opentype'),
+        url('../essal/fonts/icons/iconsdd40.ttf?v=254') format('truetype'),
+        url('../essal/fonts/icons/iconsdd40.woff?v=254') format('woff'),
+        url('../essal/fonts/icons/iconsdd40.svg?v=254') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face{
+    font-family:Material-Design-Iconic-Font;
+    src:url(../essal/fonts/Material-Design-Iconic-Fontd1f1.woff2?v=2.2.0) format('woff2'),
+    url(../essal/fonts/Material-Design-Iconic-Fontd1f1.woff?v=2.2.0) format('woff'),
+    url(../essal/fonts/Material-Design-Iconic-Fontd1f1.ttf?v=2.2.0) format('truetype')
+}
+
+.account-system {
+    background-image: url('../essal/img/features/calculator.png');
+    background-repeat: no-repeat;
+}
+.payment-system {
+    background-image: url('../essal/img/features/flag.png');
+    background-repeat: no-repeat;
+}
+.sales-system {
+    background-repeat: no-repeat;
+    background-image: url('../essal/img/features/tag.png');
+}
+.hr-system {
+    background-repeat: no-repeat;
+    background-image: url('../essal/img/features/calender.png');
+}
+.customer-system {
+    background-repeat: no-repeat;
+    background-image: url('../essal/img/features/person.png');
+}
+.project-system {
+    background-repeat: no-repeat;
+    background-image: url('../essal/img/features/suite.png');
+}
+.manufacture-system {
+    background-repeat: no-repeat;
+    background-image: url('../essal/img/features/light.png');
+}
+.support-system {
+    background-image: url('../essal/img/features/phone.png');
+    background-repeat: no-repeat;
+}
+.service-icon-compute {
+    background-image: url(../essal/img/services/economy.png) !important;
+}
+.service-icon-storage {
+	background-image: url(../essal/img/services/compatibility.png) !important;
+}
+.service-icon-dedicated {
+	background-image: url(../essal/img/services/cloudy.png) !important;
+}
+
+.file-manager-system {
+    background-image: url('../essal/img/features/file_manager.png');
+    background-repeat: no-repeat;
+}
+.pos-system {
+    background-image: url('../essal/img/features/sales_point.png');
+    background-repeat: no-repeat;
+}
+.website-system {
+    background-image: url('../essal/img/features/website.png');
+    background-repeat: no-repeat;
+}
+.stock-system {
+    background-image: url('../essal/img/features/stock.png');
+    background-repeat: no-repeat;
+}
+.tasks-system {
+    background-image: url('../essal/img/features/task_manager.png');
+    background-repeat: no-repeat;
+}
+
+
+.btn-dark:hover, .btn-dark:active, .btn-dark:focus {
+    color: #fff;
+    background-color: #2177c2 !important;
+    border-color: #2177c2 !important;
+}
+
+.navbar-main > li > a {
+    background-color: transparent;
+    -webkit-transition: all ease-in .15s;
+    transition: all ease-in .15s;
+}
+.nav-tabs > li > a:hover {
+    border:none;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent ;
+}
+.navbar-main > li > a:hover,
+.navbar-main > li > a:focus,
+.navbar-main > li > a:active,
+.banner-tabs .nav-tabs > li.active > a{
+    background-color: transparent !important;
+}
+.btn.btn-light:hover {
+    color: #fff;
+    background-color: rgba(255,255,255, 0.2) !important;
+    border-color: transparent;
+}
+.banner-tabs .nav-tabs > li.active > a {
+    border:none;
+}
+.nav > li > a:focus {
+    background-color: transparent !important;
+}
+.navbar-main > li:first-child {
+		display: block;
+}
+
+.bird-fast {
+    position: relative;
+    height: 128px;
+    width: 128px;
+    background-image: url(../essal/img/section/bird-fast.svg);
+    background-size: cover;
+}
+
+[data-path="login"] .page-navbar {
+    background: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%) !important;
+    height: 120px;
+
+}
+
+[data-path="login"] .login-content {
+    margin-top: 120px;
+}
+
+
+.section-center.features > .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+[data-path=""] a.service ,
+ul.footer-features-list li >a{
+    cursor:default !important;
+}
+.testimonial-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 25px 20px;
+
+}
+.testimonial-container .quotes-mark{
+    width: 30px;
+    height: 28px;
+    display: inline-block;
+    float: left;
+    margin: 4px;
+}
+.testimonial-content {
+    width:85%;
+    margin: 6px auto;
+
+}
+.testimonial-content >p{
+    font-style: italic;
+    color: #3b3b3b;
+}
+.testimonial-container .name-position{
+    text-align: center;
+}
+.testimonial-container .name-position >h3 {
+    margin: 6px 0 0 0;
+}
+.testimonial-container .name-position >p{
+    color: #8c9091;
+}
+.testimonial-text{
+    padding: 18px;
+    background-color: #e8eeee;
+    position: relative;
+}
+.testimonial-text:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #e8eeee transparent transparent;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+.testimonial-by .co-img
+{
+    display: inline-block;
+    float: right;
+}
+.testimonial-by .name-position >h2{
+    margin: 0;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+.testimonial-by .name-position p{
+    color: #464646;
+}
+
+.testimonial-by .co-img {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 4px;
+}
+.testimonial-container .person-image {
+    width: 120px;
+    height: 120px;
+}
+.section-white .register-form .form-control{
+    background-color: #FFF;
+    border:1px solid #d6d6d6;
+    color: #d6d6d6 !important;
+}
+.section-white .register-form .form-control:focus,
+.section-white .register-form .form-control:active{
+    box-shadow: none;
+}
+.section-white .register-form .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #d6d6d6;
+}
+.section-white .register-form .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #d6d6d6;
+   opacity:  1;
+}
+.section-white .register-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #d6d6d6;
+   opacity:  1;
+}
+.section-white .register-form .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #d6d6d6;
+}
+.navbar-container {
+    width: calc(100% - 120px);
+}
+.navbar-container .nav.navbar-buttons >li{
+    float: right;
+}
+@media (max-width: 767px) {
+    .navbar-open .navbar-container {
+        width: 100%;
+    }
+    .navbar-container .nav.navbar-buttons {
+        text-align: center;
+    }
+    [data-path="login"] ul.nav.navbar-buttons > li {
+        margin: 0 auto !important;
+        float: none;
+
+    }
+
+    .page-navbar .navbar-buttons > li.nav-signup-btn
+    {
+
+       padding: 0 15px 0 0  !important;
+       width: 135px;
+       display: inline-block;
+        float: none;
+    }
+
+    .page-navbar .navbar-buttons > li.nav-login-btn
+    {
+
+       padding: 0 0 0  15px !important;
+       width: 135px;
+        display: inline-block;
+        float: none;
+    }
+    .page-navbar .navbar-buttons > li.nav-signup-btn >.btn,
+    .page-navbar .navbar-buttons > li.nav-login-btn >.btn
+    {
+
+        width: 100%;
+
+    }
+
+}
+
+.navbar a.btn-outline:hover,
+.navbar a.btn-outline:focus{
+    border-bottom: 1px solid #1e88e5 !important;
+}
+
+.features-page .features .feature {
+    padding: 0 15px;
+}
+.features-page .features .feature h4{
+    margin-bottom: 8px;
+}
+.features-page .features .feature p{
+    font-size: 14px;
+}
+
+.features-more-display {
+    font-size: 26px;
+    font-weight: bold;
+
+}
+.features-more-display + h3 {
+    margin: 4px 0;
+    font-weight: bold;
+}
+
+.features-icon-right .feature {
+    position: relative;
+    padding-right: 82px;
+    text-align: right;
+}
+.features-icon-right .feature > i {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.au-more-than {
+    font-size: 14px;
+    font-weight: normal;
+}
+.features-icon-right .feature h3{
+    font-size: 20px;
+}
+
+.au-features-icon {
+
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    right: 10px;
+
+}
+.au-features-icon.support-ic {
+
+    background-image: url('../essal/img/png/auf_support.png');
+    background-repeat: no-repeat;
+}
+.au-features-icon.cloud-ic {
+
+    background-image: url('../essal/img/png/auf_cloud.png');
+    background-repeat: no-repeat;
+}
+.au-features-icon.secure-ic {
+
+    background-image: url('../essal/img/png/auf_secure.png');
+    background-repeat: no-repeat;
+}
+.au-features-icon.update-ic {
+
+    background-image: url('../essal/img/png/auf_update.png');
+    background-repeat: no-repeat;
+}
+.au-features-icon.restore-ic {
+
+    background-image: url('../essal/img/png/auf_restore.png');
+    background-repeat: no-repeat;
+}
+.au-features-icon.responsive-ic {
+
+    background-image: url('../essal/img/png/auf_responsive.png');
+    background-repeat: no-repeat;
+}
+.out-goal-txt {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.page-banner:after
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+	content: "";
+	width: 100%;
+  min-width: 700px;
+	background: #026FCE;
+	background: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+	background-image: -ms-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+	background-image: -moz-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+	background-image: -o-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+	background-image: -webkit-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+	background-image: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);	
+}
+
+
+/*
+[data-path="login"] ul.nav.navbar-buttons > li:last-child{
+    display: none !important;
+}*/
+
+

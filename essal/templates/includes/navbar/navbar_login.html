@@ -1,0 +1,15 @@
+<!-- post login tools -->
+{% if not only_static %}
+
+{% if not hide_login %}
+
+
+    {% if page == "login" %}
+        <li class="nav-login-btn hide"><a href="/login" class="btn btn-outline btn-light">الدخول</a></li>
+    {% else %}
+         <li class="nav-login-btn "><a href="/login" class="btn btn-outline btn-light">الدخول</a></li>
+    {% endif %}
+
+    <li class="nav-signup-btn"><a href="/login#signup" class="btn btn-dark">تسجيل الاشتراك</a></li>
+{% endif %}
+{% endif %}
