@@ -1,0 +1,256 @@
+{% extends "templates/web.html" %}
+{% block title %} الرئيسية {% endblock %}
+
+{% block page_banner %}
+   <div class="page-banner page-banner-home">
+		<div class="banner-slogan">
+			<div class="container">
+				<h3 class="slogan-title">وببساطة، تابع أعمالك أينما كنت</h3>
+
+				<h1 class="slogan-desc">نظام مالي و إداري سحابي حاصل على ثقة العديد من الشركات</h1>
+                <br>
+                <h2 class="slogan-desc"><strong>اشترك الآن و جرب ايصال لمدة 30 يومأ مجاناً </strong></h2>
+
+				<form method="post" action="" class="register-form">
+					<input type="hidden" name="action" value="register"/>
+					<input style="display: none;" name="email" value="" autocomplete="off">
+
+					<div class="register-container" style="direction:rtl">
+						<div class="form-group pull-left">
+							<input name="emai" class="form-control input-lg" type="text" placeholder="البريد الالكتروني"/>
+						</div>
+						<div class="form-group">
+							<input name="password" class="form-control input-lg" type="text" placeholder="اسم الشركة بالإنجليزية"/>
+						</div>
+						<button class="btn btn-primary-light btn-lg" type="submit">
+							الاشتراك
+						</button>
+					</div>
+                    <div class="row">
+                            <div id="contact-alert"
+                                 class="alert"
+                                 style="display: none;">&nbsp;
+                            </div>
+                        </div>
+				</form>
+			</div>
+		</div>
+		<!-- /.banner-slogan -->
+
+		<div class="banner-image">
+			<div class="container">
+				<div class="responsive-image">
+					<div class="browser browser-xlg desktop-size">
+						<div class="browser-header">
+							<div class="browser-menu"><span></span><span></span><span></span></div>
+							<div class="browser-bar"></div>
+							<div class="browser-buttons"><span></span><span></span><span></span></div>
+						</div>
+						<div class="browser-body">
+							<div class="control-panel animate">
+								<div class="play">
+									<span class="play-btn"><i class="zmdi zmdi-play"></i></span>
+								</div>
+							</div>
+							<img src="assets/essal/img/web.gif" />
+						</div>
+					</div>
+					<!-- /.browser -->
+
+
+
+
+
+					<div class="phone phone-xlg mobile-size">
+						<div class="phone-header">
+							<div class="phone-speaker"></div>
+						</div>
+						<div class="phone-body">
+							<div class="play">
+								<span class="play-btn"><i class="zmdi zmdi-play"></i></span>
+							</div>
+							<img src="assets/essal/img/mobile.gif" />
+						</div>
+						<div class="phone-footer">
+							<div class="phone-btn"></div>
+						</div>
+					</div>
+					<!-- /.phone -->
+					<div class="image image-lines"></div>
+					<div class="image image-lines image-lines-right"></div>
+				</div>
+				<!-- /.responsive-image -->
+			</div>
+		</div>
+		<!-- /.banner-image -->
+
+   </div>
+
+{%  endblock %}
+
+{% block content %}
+
+	<!-- /.page-banner -->
+
+	<div class="page-section section-center">
+		<div class="container">
+			<h2 class="section-title">لماذا إيصال؟</h2>
+
+			<div class="services">
+				<div class="row">
+					<div class="col-sm-4">
+						<a class="service" href="javascript:void(0)">
+							<i class="service-icon service-icon-compute image-shadow-sm animate zoomIn"></i>
+							<div class="service-body">
+								<h3>مالي و إداري</h3>
+								<p>حزمة برمجية شاملة و متميزة تتناسب مع المؤسسات الصغيرة و المتوسطة مع خدمة تطوير و دعم فني على مدار الساعة.</p>
+							</div>
+						</a>
+						<!--/ .service -->
+					</div>
+					<div class="col-sm-4">
+						<a class="service" href="javascript:void(0)">
+							<i class="service-icon service-icon-storage image-shadow-sm animate zoomIn"></i>
+							<div class="service-body">
+								<h3>متوافق مع الهواتف الذكية</h3>
+								<p>تمتع بوصول و نظام تشفير آمن من خلال تطبيقات الهواتف الذكية (اندرويد، أيفون)<br/><br/></p>
+							</div>
+						</a>
+						<!--/ .service -->
+					</div>
+					<div class="col-sm-4">
+						<a class="service" href="javascript:void(0)">
+							<i class="service-icon service-icon-dedicated image-shadow-sm animate zoomIn"></i>
+							<div class="service-body">
+								<h3>نظام سحابي متكامل</h3>
+								<p>جميع البيانات مخزنة سحابياً مع إمكانية الدخول لإيصال من أي مكان دون تكاليف إعداد أو صيانة</p>
+							</div>
+						</a>
+						<!--/ .service -->
+					</div>
+				</div>
+			</div>
+			<!--/ .services -->
+		</div>
+	</div>
+	<!-- /.page-section -->
+
+	<!-- /.page-section -->
+		<a name="features"></a>
+		<div class="page-section section-center features">
+
+		<div class="row">
+        <div class="container">
+
+			<h1 class="section-title">الدقة، الكفاءة، الجودة</h1>
+
+			<p class="section-desc">مجموعة من اﻷنظمة المترابطة و المتكاملة</p>
+
+			<div class="features features-icon-top features-center">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg account-system animate zoomIn"></i>
+							<h4>نظام المحاسبة</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg payment-system animate zoomIn"></i>
+							<h4>نظام المبيعات و نقاط البيع</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+					<div class="clear-xs"></div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg sales-system animate zoomIn"></i>
+							<h4>نظام المشتريات</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg hr-system animate zoomIn"></i>
+							<h4>إدارة الموارد البشرية</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg customer-system animate zoomIn"></i>
+							<h4>نظام إدارة علاقات العملاء</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg project-system animate zoomIn"></i>
+							<h4>نظام إدارة المشاريع</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+					<div class="clear-xs"></div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg manufacture-system animate zoomIn"></i>
+							<h4>إدارة التصنيع و الإنتاج</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+					<div class="col-sm-3 col-xs-6">
+						<div class="feature"><i class="icon icon-lg support-system animate zoomIn"></i>
+							<h4>الدعم الفني</h4>
+						</div>
+					</div>
+					<!-- /.feature -->
+				</div>
+
+				<div class="actions">
+					<a class="btn btn-lg btn-primary btn-outline" href="/features">اعرف المزيد<i class="zmdi zmdi-long-arrow-left"></i></a>
+				</div>
+			</div>
+			<!-- /.features -->
+
+		</div>
+        </div>
+	</div>
+	<!-- /.page-section -->
+		<div class="page-section section-blue section-center">
+		<div class="container">
+			<h2 class="section-title">اشترك اﻵن في إيصال</h2>
+
+			<form method="post" action="" class="register-form">
+				<input type="hidden" name="action" value="register"/>
+								<input style="display: none;" name="email" value="" autocomplete="off">
+
+				<div class="register-container" style="direction:rtl">
+						<div class="form-group pull-left">
+							<input name="emai" class="form-control input-lg" type="text" placeholder="البريد الالكتروني"/>
+						</div>
+						<div class="form-group">
+							<input name="password" class="form-control input-lg" type="text" placeholder="اسم الشركة بالإنجليزية"/>
+						</div>
+						<button class="btn btn-primary-light btn-lg" type="submit">
+							الاشتراك
+						</button>
+                </div>
+			</form>
+
+		</div>
+	</div>
+	<!-- /.page-section -->
+
+        </div>
+    <script>
+        {% include "templates/includes/subscribe.js" %}
+    </script>
+    </div>
+
+{% endblock %}
+
+<div>
+	{% block footer %}
+
+		{%- block top_footer -%}	{% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+
+	{% endblock %}
+
+
+</div>

@@ -1,0 +1,90 @@
+
+{% extends "templates/web.html" %}
+
+{% block title %}  الوظائف الشاغرة  {% endblock %}
+
+
+{% block page_banner %}
+
+    	<div class="page-banner page-banner-subpage p-b-0">
+		<div class="container">
+			<div class="banner-slogan banner-slogan-hero">
+				<h1 class="slogan-title text-center">  انضم لفريق ايصال  </h1>
+				<h2 class="slogan-desc text-center"> نبحث عن المواهب ونسعى معها للوصول للاحترافيه في صناعة الابداع، نحتاج لموهبتك كي نحقق الهدف معا.</h2>
+			</div>
+		</div>
+		<!-- /.banner-tabs -->
+	</div>
+	<!-- /.page-banner -->
+{%  endblock %}
+
+{% block content %}
+	<div class="price-container">
+
+
+
+
+		<div class="page-section section-center">
+		<div class="container">
+			<h2 class="section-title"> الوظائف المتاحة </h2>
+			<ul class="accordion accordion-bordered">
+				<li class="">
+					<h3 class="accordion-title"><span class="plus-icon animate zoomIn" style="visibility: visible; animation-name: zoomIn;"><span></span><span></span></span>Softwere Developers</h3>
+
+					<div class="accordion-body collapse " aria-expanded="false">
+						<p class="desc">Essal developers work with the latest technology to maintain and improve our performance cloud products.</p>
+						<h4>Qualifications</h4>
+						<ul class="list-bullet">
+							<li>3+ years object oriented development in PHP</li>
+							<li>2+ years administration experience in Linux/FreeBSD systems</li>
+							<li>2+ years SQL design and utilization</li>
+							<li>Experience with Bash, Ruby, C++, and/or Perl a plus</li>
+							<li>Demonstrated creative troubleshooting, problem solving and analytical skills</li>
+							<li>Focused on optimization and attention to detail</li>
+						</ul>
+						<div class="m-t-30 text-center">
+							<form method="get" action="/corporate/careers2/">
+								<input type="hidden" name="type" value="Software Developer">
+								<input class="btn btn-block btn-primary btn-outline" type="submit" value="تقديم الطلب">
+							</form>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+
+
+		<div class="page-section section-blue section-center">
+		<div class="container">
+			<h2 class="section-title">اشترك اﻵن في إيصال</h2>
+
+			<form method="post" action="" class="register-form">
+				<input type="hidden" name="action" value="register"/>
+								<input style="display: none;" name="email" value="" autocomplete="off">
+
+				<div class="register-container">
+					<div class="form-group">
+						<input name="email" class="form-control input-lg" type="text" placeholder="البريد الالكتروني" required/>
+					</div>
+					<div class="form-group">
+						<input name="password" class="form-control input-lg" type="password" placeholder="كلمة المرور" required/>
+					</div>
+					<button class="btn btn-primary-light btn-lg" type="submit">الاشتراك</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<!-- /.page-section -->
+	</div>
+
+{% endblock %}
+
+<div>
+	{% block footer %}
+		{%- block top_footer -%}	{% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+	{% endblock %}
+</div>

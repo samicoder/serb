@@ -1,0 +1,742 @@
+{% extends "templates/web.html" %}
+
+{% block title %} الاسعار  {% endblock %}
+
+{% block page_banner %}
+<div class="page-banner page-banner-subpage p-b-0">
+    <div class="container">
+        <div class="banner-slogan banner-slogan-hero">
+            <h1 class="slogan-title text-center"> الباقات والأسعار </h1>
+            <h2 class="slogan-desc text-center">اشترك الآن وتمتع باستخدام مزايا وتطبيقات ايصال، مع الإعداد والتدريب
+                مجاناً</h2>
+            <h2 class="slogan-desc text-center">اشترك الآن وجرب إيصال لمدة 30 يوماً مجاناً</h2>
+        </div>
+    </div>
+    <!-- /.banner-tabs -->
+</div>
+
+
+{%  endblock %}
+
+{% block content %}
+<div class="price-container">
+
+
+    <!-- /.page-banner -->
+
+
+    <!-- /.page-section -->
+    <!-- Pricing -->
+    <div class="secondary-page-section page-section section-center features">
+        <div class="row">
+
+            <div class="container">
+                <div class="pricing-table ">
+                    <div class="row plan-container">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <h2>تختلف الأسعار بإختلاف عدد المستخدمين</h2>
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input id="users-no-slider" class="form-control" type="text" data-slider-min="1"
+                                       data-slider-max="30" data-slider-step="1" data-slider-value="1"
+                                       data-slider-reversed="true"/>
+
+                            </div>
+                            <div class="form-group users-no-group">
+                                <label for="users-no-slider-val">عدد المستخدمين</label>
+                                <input class="form-control text-center" type="text" id="users-no-slider-val" value="1">
+                            </div>
+                            <div>
+                                 <div class="startup-content clearfix">
+
+											<div style="width: 100%;height: 100%">
+								                <img alt="" src="assets/essal/img/image1.jpg" class="lazy"/>
+							                </div>
+                                        <!--
+                                        <div>
+
+                                             <a href="" class="btn btn-dark pull-left"> اشترك الآن </a>
+
+                                        </div>
+                                        -->
+                                    </div>
+                            </div>
+                        </div>
+                        <div class=" space col-sm-3">
+                            <div class="plan-card plan-active month-plan">
+                                <ul class="list-unstyled">
+                                    <li class="name">
+                                        <h3> الدفع الشهري</h3>
+                                    </li>
+                                    <li class="price">
+                                        <span> <span class="total-price">20</span> <span> $ / شهريا</span> </span>
+                                    </li>
+                                    <li class="subscribe">
+                                        <span>اشترك سنويا ووفر 10%</span>
+                                    </li>
+
+                                </ul>
+                                <div class="btn-subscribe-now">
+                                    <!-- /subscription?package=month20 -->
+                                    <a id="subscribe-monthly" href="/subscription?package=month20"
+                                       class="btn btn-dark "> اشترك الآن </a>
+                                    <!-- https://subscriptions.zoho.com/subscribe/fee1a467cf416b4201b1342967d005e36a2bba0f6b053217afe8ded60e8a6aa6/month20 -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="offset-sm-6 space col-sm-3">
+                            <div class="plan-card second-plan-card year-plan">
+                                <ul class="list-unstyled">
+                                    <li class="name">
+                                        <h3> الدفع السنوي</h3>
+                                    </li>
+                                    <li class="price">
+
+                                        <span> <span class="total-price">216</span> <span> $ / سنويا</span> </span>
+                                    </li>
+                                    <li class="subscribe">
+                                        <span>اشترك سنويا ووفر 10%</span>
+
+
+                                    </li>
+                                    <li>
+										<span class="year-discount">
+											<span> وفرت </span>
+											<span class="discount-value">24</span>
+											<span> $ </span>
+										</span>
+                                    </li>
+                                </ul>
+                                <div class="btn-subscribe-now">
+                                    <!-- /subscription?package=year216 -->
+                                    <a id="subscribe-year" href="/subscription?package=year216" class="btn btn-dark">
+                                        اشترك الآن </a>
+                                    <!-- https://subscriptions.zoho.com/subscribe/fee1a467cf416b4201b1342967d005e36a2bba0f6b053217afe8ded60e8a6aa6/year216 -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+
+                        <table class=" price-features-table text-right table ">
+                            <tr>
+                                <td class=" col-xs-6 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon accounts-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/book_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>المحاسبة</h3>
+                                                <p>
+                                                    فوترة جميع المعاملات المحاسبية من: المبيعات والمشتريات والعمليات
+                                                    الأخرى
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" col-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon HR-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/HR_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>الموارد البشرية</h3>
+                                                <p>
+                                                    إدارة شئون الموظفين، وتسجيل بياناتهم والإجازات، الرواتب،الحضور
+                                                    والانصراف، ومعاملات الوظائف الشاغرة
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon stock-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/stock_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>المخازن</h3>
+                                                <p>
+                                                    إدارة المستودعات والمخازن والسلع والتحكم الكامل في عمليات الإدخال
+                                                    والتوزيع
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon buying-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/buying_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>المشتريات</h3>
+                                                <p>
+                                                    تسهيل عمليات الشراء من طلبات واستلام من الموردين والزبائن بشكل فعال
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon sales-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/sales_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>المبيعات</h3>
+                                                <p>
+                                                    المحافظة على تنظيم سجلات البيع بطريقة سهلة،وترتيب عرض الأصناف
+                                                    للزبائن.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon pos-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/pos_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>نقاط البيع</h3>
+                                                <p>
+                                                    أدارة نقاط البيع(الكاشير) وتعريف بياناتها وصلاحيتها وربط نقطة البيع
+                                                    بالمخزن الخاص بها.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon projects-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/projects_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>إدارة المشاريع</h3>
+                                                <p>
+                                                    إدارة المشاريع المختلفة من خلال جدولتها وتحديد الموظفين ومتابعة
+                                                    تنفيذ أنشطة المشروع.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon todo-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/todo_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>إدارة المهام</h3>
+                                                <p>
+                                                    المساعدة في تسجيل المهام والأنشطة وفق التقويم السنوي ومتابعتها،
+                                                    والدردشة الفورية بين الموظفين.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon CRM-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/CRM_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>إدارة علاقات العملاء</h3>
+                                                <p>
+                                                    إدارة علاقة المؤسسة مع الزبائن الحاليين والمحتملين، وتخزين معلومات
+                                                    وتقييم اتصالات الزبائن.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon manufacturing-ic">
+
+                                            <img class="img-responsive"
+                                                 src="assets/essal/img/price/manufacturing_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>التصنيع وإدارة الإنتاج</h3>
+                                                <p>
+                                                    تخطيط تكلفة المنتج، خطة الإنتاج، إنشاء طلبات وعمليات الإنتاج
+                                                    اللازمة.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon website-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/website_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>الموقع الإلكتروني</h3>
+                                                <p>
+                                                    إنشاء موقع ومدونة إلكترونية خاصة بأعمالك، وعرض المنتجات بطرق مختلفة
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon issue-ic">
+
+                                            <img class="img-responsive" src="assets/essal/img/price/issue_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>الدعم الفني</h3>
+                                                <p>
+                                                    تتبع طلبات الاستعلام والدعم الفني من الزبائن، وإنشاء تذاكر الدعم
+                                                    الفني الخاصة بكل زبون
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="-xs-3 ">
+                                    <div class="cell-content">
+                                        <div class="app-icon filemanager-ic">
+
+                                            <img class="img-responsive"
+                                                 src="assets/essal/img/price/filemanager_icon.png">
+                                        </div>
+                                        <div>
+                                            <div class="feature-content">
+                                                <h3>مدير الملفات</h3>
+                                                <p>
+                                                    استيراد وتصدير الملفات وإدارتها، وإسنادها للموظفين والأقسام المختلفة
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-3">
+                                    <div class="cell-content">
+                                        <div class="tick-icon">
+
+                                            <img class="" src="assets/essal/img/price/tick.png">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.page-section -->
+
+    <div class="page-section section-center features">
+        <div class="row">
+            <div class="container">
+
+                <h1 class="section-title">الدقة، الكفاءة، الجودة</h1>
+
+                <p class="section-desc">مجموعة من اﻷنظمة المترابطة و المتكاملة</p>
+
+                <div class="features features-icon-top features-center">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg account-system animate zoomIn"></i>
+                                <h4>نظام المحاسبة</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg payment-system animate zoomIn"></i>
+                                <h4>نظام المبيعات و نقاط البيع</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                        <div class="clear-xs"></div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg sales-system animate zoomIn"></i>
+                                <h4>نظام المشتريات</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg hr-system animate zoomIn"></i>
+                                <h4>إدارة الموارد البشرية</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg customer-system animate zoomIn"></i>
+                                <h4>نظام إدارة علاقات العملاء</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg project-system animate zoomIn"></i>
+                                <h4>نظام إدارة المشاريع</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                        <div class="clear-xs"></div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg manufacture-system animate zoomIn"></i>
+                                <h4>إدارة التصنيع و الإنتاج</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="feature"><i class="icon icon-lg support-system animate zoomIn"></i>
+                                <h4>الدعم الفني</h4>
+                            </div>
+                        </div>
+                        <!-- /.feature -->
+                    </div>
+                </div>
+                <!-- /.features -->
+                <div class="actions">
+                    <a class="btn btn-lg btn-primary btn-outline" href="features/index.html">اعرف المزيد<i
+                            class="zmdi zmdi-long-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-section -->
+    <div class="page-section section-blue section-center">
+        <div class="container">
+            <h2 class="section-title">اشترك اﻵن في إيصال</h2>
+
+            <form method="post" action="" class="register-form">
+                <input type="hidden" name="action" value="register"/>
+                <input style="display: none;" name="email" value="" autocomplete="off">
+
+                <div class="register-container">
+                    <div class="form-group">
+                        <input name="email" class="form-control input-lg" type="text" placeholder="البريد الالكتروني"
+                               required/>
+                    </div>
+                    <div class="form-group">
+                        <input name="password" class="form-control input-lg" type="password" placeholder="كلمة المرور"
+                               required/>
+                    </div>
+                    <button class="btn btn-primary-light btn-lg" type="submit">الاشتراك</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- /.page-section -->
+</div>
+
+{% endblock %}
+
+<div>
+    {% block footer %}
+    {%- block top_footer -%} {% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+    {% endblock %}
+</div>
