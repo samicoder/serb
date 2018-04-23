@@ -1,0 +1,133 @@
+{% extends "templates/web.html" %}
+{% block title %} اشترك مع هُدهُد {% endblock %}
+
+{% block page_banner %}
+
+    <div class="page-banner page-banner-subpage p-b-0">
+        <div class="container">
+            <div class="banner-slogan banner-slogan-hero">
+                <h1 class="slogan-title text-center"> اشترك مع هُدهُد </h1>
+                <h2 class="slogan-desc text-center">كن جزء من الإبداع، قم بالتسجيل الآن ليكون لك الأولوية عند
+                    الإطلاقً</h2>
+            </div>
+        </div>
+        <!-- /.banner-tabs -->
+    </div>
+    <!-- /.page-banner -->
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="join-us-page">
+        <div class="row ">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="join-us-alert alert alert-danger" role="alert">
+                            {{ form_data or 'nooo' }} || {{ context or 'hi' }} || {{ token or 'hi' }}
+                        </div>
+                        <h2>اشترك مع هُدهُد</h2>
+                        <form method="POST">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">الإسم</label>
+                                        <input name="name" class="form-control form-control-lg" id="name"
+                                               type="text"
+                                               placeholder="الإسم"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="mobile_number">رقم الجوال</label>
+                                        <input name="mobile_number" class="form-control form-control-lg"
+                                               id="mobile_number"
+                                               type="tel"
+                                               placeholder="رقم الجوال"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="association_name">إسم الجمعية</label>
+                                        <input name="association_name" class="form-control form-control-lg"
+                                               id="association_name"
+                                               type="text"
+                                               value="{{ association_name or '' }}"
+                                               placeholder="إسم الجمعية"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="email">الإيميل</label>
+                                        <input name="email" class="form-control form-control-lg" id="email" type="email"
+                                               placeholder="الإيميل"
+                                               value="{{ email or '' }}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="state">المنطقة</label>
+                                        <input name="state" class="form-control form-control-lg" id="state"
+                                               type="text"
+                                               placeholder="المنطقة"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="city">المدينة</label>
+                                        <input name="city" class="form-control form-control-lg" id="city"
+                                               type="text"
+                                               placeholder="المدينة"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="activity">النشاط</label>
+                                        <input name="activity" class="form-control form-control-lg" id="activity"
+                                               type="text"
+                                               placeholder="النشاط"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+
+                                    <div class="form-group">
+                                        <label for="employee_count">عدد الموظفين</label>
+                                        <input name="employee_count" class="form-control form-control-lg"
+                                               id="employee_count"
+                                               type="number"
+                                               placeholder="عدد الموظفين"/>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button type="button" class="btn  btn-lg btn-block btn-primary join-us-send">اشتراك</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>{% include "templates/pages/join-us.js" %}</script>
+{% endblock %}
+
+<div>
+    {% block footer %}
+
+        {%- block top_footer -%}    {% include "templates/includes/footer/top_footer.html" %} {%- endblock -%}
+
+    {% endblock %}
+
+
+</div>
