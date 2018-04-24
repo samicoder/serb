@@ -1,7 +1,7 @@
 
 frappe.ready(function() {
 
-	$('.btn-lg').off("click").on("click", function() {
+	$('#join-button').off("click").on("click", function() {
 
 		var email = $('[name="emai"]').val();
 		var password = $('[name="password"]').val();

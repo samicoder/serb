@@ -1,5 +1,5 @@
-.responsive-image .play:after, .responsive-image .browser:after, .responsive-image .phone:after{
-	
+.responsive-image .play:after, .responsive-image .browser:after, .responsive-image .phone:after {
+
 }
 
 .page-banner:after {
@@ -18,10 +18,12 @@
     background-image: -webkit-linear-gradient(45deg, #2a3435 1%, #be633d 64%, #fb613b 97%);
     background-image: linear-gradient(45deg, #2a3435 1%, #be633d 64%, #fb613b 97%);
 }
+
 [data-path="login"] .page-navbar {
     background: linear-gradient(45deg, #2a3435 1%, #be633d 64%, #fb613b 97%) !important;
     height: 120px;
 }
+
 .btn-login, .btn-signup, .btn-forgot {
     background: #fb613b !important;
     color: white !important;
@@ -115,4 +117,8 @@
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+}
+
+.join_us-page .alert:empty {
+    display: none;
 }
