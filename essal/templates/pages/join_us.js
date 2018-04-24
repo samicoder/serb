@@ -6,7 +6,7 @@
 
 frappe.ready(function () {
 
-    $('.join-us-send').off("click").on("click", function () {
+    $('.join_us-send').off("click").on("click", function () {
         var name = $('[name="name"]').val();
         var mobile_number = $('[name="mobile_number"]').val();
         var association_name = $('[name="association_name"]').val();
@@ -48,16 +48,16 @@ frappe.ready(function () {
             activity: activity,
             employee_count: employee_count
         };
-        for(var i in params){
-            if(!params[i]){
+        for (var i in params) {
+            if (!params[i]) {
                 delete params[i];
             }
         }
 
-        $("#contact-alert").toggle(false);
+        //  $("#contact-alert").toggle(false);
         frappe.call({
             type: "POST",
-            method: "essal.templates.pages.join-us.join_us",
+            method: "essal.templates.pages.join_us.join_us",
             btn: this,
             args: params,
             callback: function (r) {
@@ -76,6 +76,8 @@ frappe.ready(function () {
 
 });
 
-var msgprint = function (txt) {
-    if (txt) $(".join-us-alert").html(txt).toggle(true);
+var msgprint = function (txt, type) {
+    var alert_type = type || 'danger';
+    $(".alert-success .alert-danger").html('');
+    if (txt) $(".alert-" + alert_type).html(txt).toggle(true);
 };
