@@ -16,31 +16,32 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 app_include_css = [
-		# "/assets/essal/css/bootstrap-rtl.min.css",
-		#"assets/essal/css/essal.css"
+    # "/assets/essal/css/bootstrap-rtl.min.css",
+    # "assets/essal/css/essal.css"
 ]
 
 web_include_js = ["assets/js/essal-web.min.js"]
 web_include_css = [
-	"assets/css/essal-web.css",
-	"assets/essal/css/custom.css"
+    "assets/css/essal-web.css",
+    "assets/essal/css/custom.css"
 ]
 
-#app_include_js = ["assets/js/essal-desk.min.js"]
+# app_include_js = ["assets/js/essal-desk.min.js"]
 
 app_include_css = [
-#    "/assets/essal/css/bootstrap-flipped.css",
-#    "/assets/essal/css/bootstrap-flipped.css.map",
-#    "/assets/essal/css/bootstrap-flipped.min.css",
-#    "/assets/essal/css/bootstrap-rtl.css",
-#    "/assets/essal/css/bootstrap-rtl.css.map",
-#    "/assets/essal/css/bootstrap-rtl.min.css"
+    "assets/essal/css/desktop-custom.css"
+    #    "/assets/essal/css/bootstrap-flipped.css",
+    #    "/assets/essal/css/bootstrap-flipped.css.map",
+    #    "/assets/essal/css/bootstrap-flipped.min.css",
+    #    "/assets/essal/css/bootstrap-rtl.css",
+    #    "/assets/essal/css/bootstrap-rtl.css.map",
+    #    "/assets/essal/css/bootstrap-rtl.min.css"
 ]
 
-#website_context = {
-#	"favicon": 	"/assets/essal/img/favicon.jpg",
-#	"splash_image": "/assets/essal/img/png/essal_logo_150.png"
-#}
+website_context = {
+	# "favicon": 	"/assets/essal/img/favicon.jpg",
+	"splash_image": "/assets/essal/img/desk/splash.png"
+}
 
 # include js, css files in header of web template
 # web_include_css = "/assets/essal/css/essal.css"
