@@ -101,7 +101,7 @@ def signup_new_user(email="", company_name=""):
         message=msg,
         recipients=[email],
         subject="مرحبا في هُدهُد",
-        sender="essal.co.sa@gmail.com",
+        sender="hudhud.co.sa@gmail.com",
         delayed=False,
         as_markdown=True
     )
@@ -162,7 +162,7 @@ def send_site_details_email():
         message=msg,
         recipients=[company.company_email],
         subject="تفعيل حسابك في هُدهُد",
-        sender="essal.co.sa@gmail.com",
+        sender="hudhud.co.sa@gmail.com",
         delayed=False,
         as_markdown=True
     )
