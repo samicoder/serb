@@ -122,3 +122,14 @@
 .join_us-page .alert:empty {
     display: none;
 }
+
+.navbar-open .navbar-main a.slogan-desc {
+    color: #2a3435;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .navbar-open .navbar-toggle span {
+        background-color: #fb613b;
+    }
+}
