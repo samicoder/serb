@@ -86,21 +86,21 @@ def signup_new_user(email="", company_name=""):
 
     # Send them a welcome email
     msg = """<div dir="rtl"><br><h4>
-    أهلا بكم في هُدهُد.. {}
+    أهلا بكم في نماء.. {}
 </h4><br> </div>
 <div dir="rtl"><h5>
-   يسرنا إعلامكم أن الخطوة الأولى لتسجيل شركتكم في هُدهُد قد تمت بنجاح..
+   يسرنا إعلامكم أن الخطوة الأولى لتسجيل شركتكم في نماء قد تمت بنجاح..
 <br>
-     سوف نقوم بمراسلتكم قريبا مرة أخرى ونرسل لكم كافة بيانات تسجيل الدخول إلى نظام هُدهُد المحاسبي.
-    نتمنى أن يكون هُدهُد خطوة نحو التقدم لكم.
+     سوف نقوم بمراسلتكم قريبا مرة أخرى ونرسل لكم كافة بيانات تسجيل الدخول إلى نظام نماء المحاسبي.
+    نتمنى أن يكون نماء خطوة نحو التقدم لكم.
 <br></h5></div><div dir="ltr"><h4>
-    فريق عمل هُدهُد
+    فريق عمل نماء
 </h4> </div>""".format(company_name)
     try:
         frappe.sendmail(
         message=msg,
         recipients=[email],
-        subject="مرحبا في هُدهُد",
+        subject="مرحبا في نماء",
         sender="hudhud.co.sa@gmail.com",
         delayed=False,
         as_markdown=True
@@ -138,9 +138,9 @@ def send_site_details_email():
     )
     # Send them a welcome email
     msg = """<div dir="rtl"><br><h4>
-        أهلا بكم مجددا في هُدهُد..
+        أهلا بكم مجددا في نماء..
 </h4><br></div><div dir="rtl"><h5>
-       يسعدنا أن نبلغكم بأن موقعكم الخاص بنظام هُدهُد المحاسبي جاهز الآن للإستخدام..
+       يسعدنا أن نبلغكم بأن موقعكم الخاص بنظام نماء المحاسبي جاهز الآن للإستخدام..
 <br>
      للدخول إلي موقعكم.. يرجى الضغط على الرابط التالي:
 </h5></div><div dir="rtl"><h3>
@@ -153,15 +153,15 @@ def send_site_details_email():
 كلمة المرور: <b>{admin_pass}</b><br>
 </h4></div>
 <div dir="rtl"><h5>
-<br>نتمنى لكم محاسبة أكثر دقة مع هُدهُد<br>
+<br>نتمنى لكم محاسبة أكثر دقة مع نماء<br>
 <br></h5></div><div dir="ltr"><h4>
-        فريق عمل هُدهُد
+        فريق عمل نماء
 </h4> </div>""".format(domain=domain, admin_pass=admin_pass)
 
     frappe.sendmail(
         message=msg,
         recipients=[company.company_email],
-        subject="تفعيل حسابك في هُدهُد",
+        subject="تفعيل حسابك في نماء",
         sender="hudhud.co.sa@gmail.com",
         delayed=False,
         as_markdown=True
